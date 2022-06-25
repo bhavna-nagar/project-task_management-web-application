@@ -1,0 +1,275 @@
+/*.App {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 239, 244);
+}
+
+.board {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-right:20px;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.board:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.board .title {
+  flex: 20%;
+  border-bottom: 1px solid lightgray;
+  background-color: rgb(136, 215, 218);
+  display: grid;
+  place-content: center;
+  color: white;
+  font-size: large;
+}
+
+.board .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+  background-color: rgb(203, 239, 253);
+}
+
+
+
+.createboardpage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border: 5px solid dodgerblue;
+  border-radius: 5px;
+}
+
+.formcontainer #inputcreateboard {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+
+
+
+.formcontainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: lightskyblue;
+  border-radius: 5px;
+  color: white;
+}
+
+.formcontainer button:hover {
+  cursor: pointer;
+  background-color: dodgerblue;
+}
+
+span {
+  color: red;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(30, 221, 255);
+  display: flex;
+  align-items: center;
+  padding-left: 10;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar button{
+  margin:10px;
+  background-color:white;
+  color:rgb(30, 221, 255);
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  font-size: 15px;
+
+}
+.navbar h1 {
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+
+.container{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container1{
+  width:300px;
+  height:50px;
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: pink;
+  padding:30px;
+  margin:4px;
+}
+
+.container1 .heading{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 4px;
+}
+
+.container2{
+  width:100vw;
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
+  margin:4px;
+}
+
+.container3{
+  width:100vw;
+  height:auto;
+  display:flex;
+  flex-direction:row;
+  align-items: flex-start;
+  padding:30px;
+  margin:20px;
+
+}
+
+
+.lists{
+  width:200px;
+  display:flex;
+  flex-direction:row;
+  align-items: flex-start;
+  background-color: rgb(177, 34, 177);
+  padding:10px;
+  margin:10px;
+  border-radius: 5px;
+}
+
+.listtitle,.itemcontainer{
+  width:150px;
+  margin:10px;
+  padding:10px;
+  background-color: rgb(245, 239, 244);
+  border-radius: 5px;
+  font-size:20px;
+}
+
+.listform{
+  margin:10px;
+  border-radius: 5px;
+
+}
+
+.listform button{
+  background-color: rgb(230, 72, 190);
+  border-radius: 5px;
+  border:none;
+  padding: 3px;
+  color: white;
+}
+
+
+.container4{
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.container4 .form{
+  height:100px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:2px;
+  border:2px solid purple;
+  border-radius: 20px;
+  margin-top:40px;
+}
+
+.container4 .form #createlist{
+  margin:3px;
+  border-radius: 5px;
+  height:40px;
+  padding-left: 10px;
+  font-size: 10px;
+  border:1px solid purple;
+}
+
+
+.container4 .form button {
+  border: none;
+  background-color: purple;
+  border-radius: 5px;
+  color: white;
+}
+
+.container4 .form button:hover {
+  cursor: pointer;
+  background-color: rgb(97, 8, 119);
+}
+
+
+.itemtitle{
+  color: rgb(81, 91, 230);
+  font-size:18px;
+}
+
+.itemtext{
+  font-size: 15px;
+}
+
+.calender{
+  width:100vh;
+  height:auto;
+  background-color: white;
+}
